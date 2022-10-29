@@ -10,7 +10,7 @@ h1 {
 }
 
 header {
-    background-image: url("http://intro-webdesign.com/CSS/assignment-2/images/flywheel.jpg");
+    background-image: url("flywheel.jpg");
     background-repeat: no-repeat;
     background-position-y: top;
     background-position-x: center;
@@ -44,18 +44,21 @@ nav>a {
     background-color: #ffffff;
     color: darkblue;
 }
+main{
+    display: flex;
+}
 
 .left {
-    position: absolute;
-    background-color: rgb(128, 160, 55);
+    background-color: #0a4275;
     width: 20%;
-    height: 100%;
-    top: 246px;
+    min-width: 160px;
+    /* top: 246px; */
     bottom: 100%;
+    padding-top: 8px;
 }
 
 .right {
-    margin-left: 22%;
+    padding: 2%;
 }
 
 section {
@@ -63,13 +66,68 @@ section {
 }
 
 aside img {
-    width: 190px;
+    width: 95%;
     height: 80px;
     display: block;
     border: 2px solid black;
-    margin-left: 25px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-right: 25px;
+    margin-bottom: 14px;
     align-self: center;
+    border-radius: 5px;
+}
+
+table {
+    margin: auto 0;
+    margin-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+th {
+    border: 1px solid #9ACD32;
+    border-bottom: 2px solid #9ACD32;
+    background: #6B8E23;
+    background: -moz-linear-gradient(top, #6B8E23 0%, #808000 100%);
+    background: -webkit-linear-gradient(top, #6B8E23 0%, #808000 100%);
+    background: -o-linear-gradient(top, #6B8E23 0%, #808000 100%);
+    background: linear-gradient(top, #6B8E23 0%, #808000 100%);
+    text-align: center;
+    color: #ffffff;
+    padding: 5px;
+    font-size: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: static;
+}
+
+th:first-child {
+    text-align: left;
+}
+
+tr {
+    opacity: 0.8;
+    text-align: center;
+}
+
+tr:first-child {
+    text-align: left;
+}
+
+tr:hover {
+    opacity: 1.0;
+}
+
+td {
+    color: #808080;
+    background: #cce9cc;
+    padding: 5px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+td:first-child {
+    text-align: left;
 }
